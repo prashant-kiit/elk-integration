@@ -1,9 +1,12 @@
-2025-07-27 19:51:32:5132 [32minfo[39m: [32mGET API[39m
-2025-07-27 19:51:32:5132 [34mhttp[39m: [34m::1 GET / 400[39m
-[34m[39m
-2025-07-27 19:51:33:5133 [32minfo[39m: [32mGET API[39m
-2025-07-27 19:51:33:5133 [34mhttp[39m: [34m::1 GET / 400[39m
-[34m[39m
-2025-07-27 19:51:34:5134 [32minfo[39m: [32mGET API[39m
-2025-07-27 19:51:34:5134 [34mhttp[39m: [34m::1 GET / 400[39m
-[34m[39m
+{"level":"info","message":"GET API","timestamp":"2025-07-27T16:20:08.918Z"}
+{"level":"http","message":"::1 GET / 200\n","timestamp":"2025-07-27T16:20:08.921Z"}
+{"level":"info","message":"GET API","timestamp":"2025-07-27T16:20:33.057Z"}
+{"level":"http","message":"::1 GET / 200\n","timestamp":"2025-07-27T16:20:33.060Z"}
+{"level":"info","message":"GET API","timestamp":"2025-07-27T16:22:23.533Z"}
+{"level":"http","message":"::1 GET / 200\n","timestamp":"2025-07-27T16:22:23.535Z"}
+{"level":"info","message":"GET API","timestamp":"2025-07-27T16:22:24.278Z"}
+{"level":"http","message":"::1 GET / 200\n","timestamp":"2025-07-27T16:22:24.279Z"}
+{"level":"info","message":"GET API","timestamp":"2025-07-27T16:22:25.030Z"}
+{"level":"http","message":"::1 GET / 200\n","timestamp":"2025-07-27T16:22:25.031Z"}
+{"level":"info","message":"GET API","timestamp":"2025-07-27T16:22:25.775Z"}
+{"level":"http","message":"::1 GET / 200\n","timestamp":"2025-07-27T16:22:25.775Z"}

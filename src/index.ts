@@ -23,7 +23,7 @@ server.use(morgan);
 server.get("/", (req, res) => {
   try {
     logger.info("GET API");
-    res.status(400).json({
+    res.status(200).json({
       message: "Successful",
       body: data,
     });

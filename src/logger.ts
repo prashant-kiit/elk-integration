@@ -32,7 +32,7 @@ const format = winston.format.combine(
 
 const transports = [
   new winston.transports.Console(),
-  new winston.transports.File({ filename: "../server.log" }),
+  new winston.transports.File({ filename: "server.log" }),
 ];
 
 const logger = winston.createLogger({

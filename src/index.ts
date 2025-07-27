@@ -22,14 +22,12 @@ server.use(morgan);
 
 server.get("/", (req, res) => {
   try {
-    // console.log("GET API");
     logger.info("GET API");
     res.status(400).json({
       message: "Successful",
       body: data,
     });
   } catch (error: any) {
-    // console.error(error);
     logger.error(error.message);
     res.status(500).json({
       message: error.message,

@@ -1,0 +1,12 @@
+{"level":"info","message":"GET API","timestamp":"2025-07-28T10:08:30.657Z"}
+{"level":"http","message":"::1 GET / 200\n","timestamp":"2025-07-28T10:08:30.662Z"}
+{"level":"info","message":"GET API","timestamp":"2025-07-28T10:08:31.954Z"}
+{"level":"http","message":"::1 GET / 200\n","timestamp":"2025-07-28T10:08:31.955Z"}
+{"level":"info","message":"GET API","timestamp":"2025-07-28T11:07:11.805Z"}
+{"level":"http","message":"::ffff:192.168.65.1 GET / 200\n","timestamp":"2025-07-28T11:07:11.812Z"}
+{"level":"info","message":"GET API","timestamp":"2025-07-28T11:07:24.298Z"}
+{"level":"http","message":"::ffff:192.168.65.1 GET / 200\n","timestamp":"2025-07-28T11:07:24.299Z"}
+{"level":"info","message":"GET API","timestamp":"2025-07-28T11:26:14.340Z"}
+{"level":"http","message":"::ffff:192.168.65.1 GET / 200\n","timestamp":"2025-07-28T11:26:14.344Z"}
+{"level":"info","message":"GET API","timestamp":"2025-07-28T11:26:40.875Z"}
+{"level":"http","message":"::ffff:192.168.65.1 GET / 200\n","timestamp":"2025-07-28T11:26:40.875Z"}

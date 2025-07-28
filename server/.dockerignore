@@ -4,5 +4,4 @@
 Dockerfile
 Makefile
 pnpm-lock.yaml
-server.log
 tsconfig.json

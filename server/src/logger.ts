@@ -40,7 +40,7 @@ const transports = [
     format: consoleFormat,
   }),
   new winston.transports.File({
-    filename: "server.log",
+    filename: "./dist/logs/server.log",
     format: fileFormat,
   }),
 ];

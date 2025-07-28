@@ -1,0 +1,43 @@
+services:
+  elasticsearch:
+    image: elasticsearch:8.18.4
+    ports:
+      - "9200:9200"
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - xpack.security.transport.ssl.enabled=false
+
+  kibana:
+    image: kibana:8.18.4
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+
+  filebeat:
+    build:
+      context: ./filebeat
+    container_name: filebeat
+    command: filebeat -e --strict.perms=false
+    volumes:
+      - ./logs:/src/logs
+    depends_on:
+      - elasticsearch
+      - kibana
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: server
+    ports:
+      - "8080:8080"
+    depends_on:
+      - elasticsearch
+    volumes:
+      - ./logs:/server/dist/logs
+
+volumes:
+  elasticsearch_data:
+    driver: local

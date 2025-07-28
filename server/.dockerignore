@@ -1,0 +1,8 @@
+/node_modules
+/src
+.dockerignore
+Dockerfile
+Makefile
+pnpm-lock.yaml
+server.log
+tsconfig.json

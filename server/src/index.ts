@@ -5,7 +5,7 @@ import logger from "./logger.js";
 const server = express();
 
 const HOST = "0.0.0.0";
-const PORT = "8000";
+const PORT = "8080";
 
 const data = [
   {

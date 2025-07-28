@@ -1,0 +1,6 @@
+{"level":"info","message":"GET API","timestamp":"2025-07-28T08:53:40.275Z"}
+{"level":"http","message":"::1 GET / 200\n","timestamp":"2025-07-28T08:53:40.279Z"}
+{"level":"info","message":"GET API","timestamp":"2025-07-28T08:53:53.203Z"}
+{"level":"http","message":"::1 GET / 200\n","timestamp":"2025-07-28T08:53:53.204Z"}
+{"level":"info","message":"GET API","timestamp":"2025-07-28T08:53:54.897Z"}
+{"level":"http","message":"::1 GET / 200\n","timestamp":"2025-07-28T08:53:54.899Z"}

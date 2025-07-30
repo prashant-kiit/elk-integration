@@ -1,6 +1,7 @@
 import express from "express";
 import morgan from "./morgan.js"
 import logger from "./logger.js";
+import prom_client from "prom-client";
 
 const server = express();
 
@@ -17,6 +18,8 @@ const data = [
     address: "Delhi",
   },
 ];
+
+prom_client.collectDefaultMetrics({});
 
 server.use(morgan);
 
@@ -35,6 +38,12 @@ server.get("/", (req, res) => {
     });
   }
 });
+
+server.get('/metrics', async (req, res) => {
+  res.set('Content-Type', prom_client.register.contentType);
+  res.end(await prom_client.register.metrics());
+});
+
 
 server.listen(PORT, () => {
   console.log(`Server is listening at http://${HOST}:${PORT}`);

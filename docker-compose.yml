@@ -26,6 +26,21 @@ services:
       - elasticsearch
       - kibana
 
+  prom-server:
+    image: prom/prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus/prometheus-config.yml:/etc/prometheus/prometheus.yml
+
+  grafana:
+    image: grafana/grafana-oss
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+
   server:
     build:
       context: ./server
@@ -41,3 +56,5 @@ services:
 volumes:
   elasticsearch_data:
     driver: local
+
+  grafana-data:
